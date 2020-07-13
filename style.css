@@ -1,0 +1,236 @@
+/* 1. Gobal
+/* ---------------------------------------------------------- */
+root {
+    /* Colours */
+    --blue: #3eb0ef;
+    --green: #a4d037;
+    --purple: #ad26b4;
+    --yellow: #fecd35;
+    --red: #f05230;
+    --darkgrey: #15171A;
+    --midgrey: #738a94;
+    --lightgrey: #c5d2d9;
+    --whitegrey: #e5eff5;
+    --pink: #fa3a57;
+    --brown: #a3821a;
+    --darkmode: color(var(--darkgrey) l(+2%));
+}
+
+
+
+html,
+body,
+div,
+form,
+h1,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+footer,
+header,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: arial;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+ul{
+    list-style-type: none;
+    width: 400;
+}
+input[type] {
+    width:90%;
+    padding:10px;
+    border-radius:10px;
+}
+
+select {
+    width:10;
+    padding:10px;
+    border-radius:10px;
+}
+li{
+    margin:10px
+}
+
+
+button{
+    padding:10px;
+    border:none;
+    background-color:#445ce6;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+}
+
+.outer {
+    position: relative;
+    padding: 0 5vw;
+    height:300;
+}
+
+.inner {
+    margin: 0 auto;
+    max-width: 1040px;
+    width: 100%;
+    height:300;
+}
+
+body {
+    line-height: 1;
+    background-color: #15171A;
+}
+
+/* 2. Site Header
+/* ---------------------------------------------------------- */
+
+.site-header-background {
+    position: relative;
+    margin-top: 64px;
+    padding-bottom: 12px;
+    color: #fff;
+    background-color:#000000;
+    background-size: cover;
+}
+
+.site-header-background:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    background: rgba(0,0,0,0.18);
+}
+
+.site-header-background:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    z-index: 10;
+    display: block;
+    height: 140px;
+    background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+
+.site-header-background.no-image:before,
+.site-header-background.no-image:after {
+    display: none;
+}
+
+.site-header-content {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6vw 3vw;
+    min-height: 200px;
+    max-height: 240px;
+}
+
+.site-title {
+    z-index: 10;
+    margin: 0 0 0 -2px;
+    padding: 0;
+    font-size: 5.0rem;
+    line-height: 1em;
+    font-weight: 600;
+}
+.site-logo {
+    max-height: 55px;
+}
+
+.site-description {
+    z-index: 10;
+    margin: 0;
+    padding: 5px 0;
+    font-size: 2.5rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    opacity: 0.8;
+    font-family:arial;
+}
+.site-sub-description{
+    z-index: 10;
+    margin: 0;
+    padding: 5px 0;
+    font-size: 1.2rem;
+    line-height: 0.4em;
+    font-weight: 400;
+    opacity: 0.8;
+    font-family:arial;
+}
+#tiniyo-link{
+    color: #fecd35;
+    background-color: transparent;
+    text-decoration: none;
+}
+#tiniyo-link:hover{
+    color: #738a94;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* 4.1 Home header
+/* ---------------------------------------------------------- */
+
+.site-home-header {
+    z-index: 1000;
+}
+
+.site-home-header .site-header-background {
+    margin-top: 0;
+    height:300;
+}
+
+.site-home-header .site-header-content {
+    padding: 5vw 3vw 6vw;
+}
+
+.site-home-header .site-title {
+    font-size: 5.5rem;
+    text-align: center;
+}
+
+.site-home-header .site-description {
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+/* Form 
+/* ---------------------------------------------------------- */
+
+
+.container {
+    text-align: center;
+    padding:30px;
+    
+}
+.container ul{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px;
+    width :300px;
+    
+}
+.container ul li{
+    width:100%;
+}
+#success{
+    text-align:center;
+    padding:50px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
