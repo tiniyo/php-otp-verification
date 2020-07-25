@@ -1,5 +1,6 @@
 /* 1. Gobal
 /* ---------------------------------------------------------- */
+
 root {
     /* Colours */
     --blue: #3eb0ef;
@@ -15,8 +16,6 @@ root {
     --brown: #a3821a;
     --darkmode: color(var(--darkgrey) l(+2%));
 }
-
-
 
 html,
 body,
@@ -39,53 +38,56 @@ section {
     font-size: 100%;
     vertical-align: baseline;
 }
-ul{
+
+ul {
     list-style-type: none;
     width: 400;
 }
+
 input[type] {
-    width:90%;
-    padding:10px;
-    border-radius:10px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 select {
-    width:10;
-    padding:10px;
-    border-radius:10px;
-}
-li{
-    margin:10px
+    width: 10;
+    padding: 10px;
+    border-radius: 10px;
 }
 
+li {
+    margin: 10px
+}
 
-button{
-    padding:10px;
-    border:none;
-    background-color:#445ce6;
-    color:#fff;
-    font-weight:600;
-    border-radius:5px;
-    width:100%;
+button {
+    padding: 10px;
+    border: none;
+    background-color: #445ce6;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 100%;
 }
 
 .outer {
     position: relative;
     padding: 0 5vw;
-    height:300;
+    height: 300;
 }
 
 .inner {
     margin: 0 auto;
     max-width: 1040px;
     width: 100%;
-    height:300;
+    height: 300;
 }
 
 body {
     line-height: 1;
     background-color: #15171A;
 }
+
 
 /* 2. Site Header
 /* ---------------------------------------------------------- */
@@ -95,7 +97,7 @@ body {
     margin-top: 64px;
     padding-bottom: 12px;
     color: #fff;
-    background-color:#000000;
+    background-color: #000000;
     background-size: cover;
 }
 
@@ -108,7 +110,7 @@ body {
     left: 0;
     z-index: 10;
     display: block;
-    background: rgba(0,0,0,0.18);
+    background: rgba(0, 0, 0, 0.18);
 }
 
 .site-header-background:after {
@@ -121,7 +123,7 @@ body {
     z-index: 10;
     display: block;
     height: 140px;
-    background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
 }
 
 .site-header-background.no-image:before,
@@ -148,6 +150,7 @@ body {
     line-height: 1em;
     font-weight: 600;
 }
+
 .site-logo {
     max-height: 55px;
 }
@@ -160,9 +163,10 @@ body {
     line-height: 1.5em;
     font-weight: 400;
     opacity: 0.8;
-    font-family:arial;
+    font-family: arial;
 }
-.site-sub-description{
+
+.site-sub-description {
     z-index: 10;
     margin: 0;
     padding: 5px 0;
@@ -170,18 +174,21 @@ body {
     line-height: 0.4em;
     font-weight: 400;
     opacity: 0.8;
-    font-family:arial;
+    font-family: arial;
 }
-#tiniyo-link{
+
+#tiniyo-link {
     color: #fecd35;
     background-color: transparent;
     text-decoration: none;
 }
-#tiniyo-link:hover{
+
+#tiniyo-link:hover {
     color: #738a94;
     background-color: transparent;
     text-decoration: none;
 }
+
 
 /* 4.1 Home header
 /* ---------------------------------------------------------- */
@@ -192,7 +199,7 @@ body {
 
 .site-home-header .site-header-background {
     margin-top: 0;
-    height:300;
+    height: 300;
 }
 
 .site-home-header .site-header-content {
@@ -209,28 +216,29 @@ body {
     font-weight: 300;
 }
 
+
 /* Form 
 /* ---------------------------------------------------------- */
 
-
 .container {
     text-align: center;
-    padding:30px;
-    
+    padding: 30px;
 }
-.container ul{
+
+.container ul {
     display: inline-block;
     margin: 10px 0;
     padding: 5px;
-    width :300px;
-    
+    width: 300px;
 }
-.container ul li{
-    width:100%;
+
+.container ul li {
+    width: 100%;
 }
-#success{
-    text-align:center;
-    padding:50px;
-    color:white;
+
+#success {
+    text-align: center;
+    padding: 50px;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }

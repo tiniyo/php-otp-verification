@@ -11,13 +11,17 @@ $phone_number=$_SESSION["phonenumber"];
 echo $phone_number;
 
 //API URL
-$auth_id = '{AUTH_ID}';
+require 'vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createUnsafeImmutable(__DIR__);
+$dotenv->load();
+$auth_id = getenv('AUTH_ID');
+$secret_id=getenv('SECRET_ID');
 $url = "https://api.tiniyo.com/v1/Account/".$auth_id."/VerificationsCheck";
 
 //create a new cURL resource
 $ch = curl_init($url);
 
-// curl_setopt($ch, CURLOPT_VERBOSE, true);
+curl_setopt($ch, CURLOPT_VERBOSE, true);
 
 //setup request to send json via POST
 $data=array("code"=> $otp_code, "dst"=> $phone_number);
@@ -25,7 +29,7 @@ $data=array("code"=> $otp_code, "dst"=> $phone_number);
 $payload = json_encode($data);
 
 curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_USERPWD, '{SECRET_AUTH_ID}');
+curl_setopt($ch, CURLOPT_USERPWD, "$auth_id:$secret_id");
 curl_setopt($ch, CURLOPT_TIMEOUT, 30);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 

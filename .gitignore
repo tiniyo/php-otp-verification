@@ -55,5 +55,11 @@ Temporary Items
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
-
-
+#environment variable
+.phpunit.result.cache
+composer.lock
+phpstan.neon
+phpstan.tests.neon
+phpunit.xml
+vendor
+.env
