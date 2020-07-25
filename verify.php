@@ -16,9 +16,7 @@ $dotenv->load();
 
 $auth_id =getenv('AUTH_ID');
 $secret_id=getenv('SECRET_ID');
-echo $auth_id;
 $url = 'https://api.tiniyo.com/v1/Account/'.$auth_id.'/Verifications';
-echo $url;
 //create a new cURL resource
 $ch = curl_init($url);
 
