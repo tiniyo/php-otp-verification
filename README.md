@@ -18,6 +18,8 @@ $ cd php-otp-verification
 
 - Copy your **Tiniyo** credential to ```verify.php``` and ```result.php``` files.
 
+![{Auth_ID} & {Secret_Auth_ID} replace by Tiniyo Credential](/images/edit.png)
+
 - Run the Local PHP Web-Server in your console.
 
 ```bash
